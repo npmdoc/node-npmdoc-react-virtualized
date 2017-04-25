@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "react-virtualized",
-    "description": "api documentation for [react-virtualized (v9.7.0)](https://github.com/bvaughn/react-virtualized) [![npm package](https://img.shields.io/npm/v/npmdoc-react-virtualized.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-virtualized) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-virtualized.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-virtualized)",
+    "description": "#### basic api documentation for  [react-virtualized (v9.7.3)](https://github.com/bvaughn/react-virtualized)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-virtualized.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-virtualized) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-virtualized.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-virtualized)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "react-virtualized": "*",
