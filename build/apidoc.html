@@ -51,7 +51,7 @@
 
         href="https://github.com/bvaughn/react-virtualized"
 
-    >react-virtualized (v9.7.0)</a>
+    >react-virtualized (v9.7.3)</a>
 </h1>
 <h4>React components for efficiently rendering large, scrollable lists and tabular data</h4>
 <div class="apidocSectionDiv"><a
@@ -452,7 +452,24 @@ to measure both. &#x27; + &#x27;This will result in poor performance.&#x27;);
   this._columnWidthCache = {};
   this._rowHeightCache = {};
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var secondProps = cellRendererCalls[2];
+
+expect(cellRendererCalls.length).toEqual(3);
+expect(firstProps.style).not.toBe(secondProps.style);
+  });
+
+  it(&#x27;should only cache styles when a :deferredMeasurementCache is provided if the cell has already been measured&#x27;, function
+ () {
+var cache = new _CellMeasurer.<span class="apidocCodeKeywordSpan">CellMeasurerCache</span>({
+  fixedWidth: true
+});
+cache.set(0, 0, 100, 100);
+cache.set(1, 1, 100, 100);
+
+var grid = (0, _TestUtils.render)(getMarkup({
+  columnCount: 2,
+...</pre></li>
     </ul>
 
 
